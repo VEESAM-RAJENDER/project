@@ -12,132 +12,105 @@
     <center><h1> TELANGANA STATE ROAD TRANSPORTS CORPORATION</h1></center>
     <center><h1>GENERAL BUS PASS APPLICATION</h1></center></th>
 </table>
-<form action="./re.html">
- <fieldset>
-    <legend><b>APPLICATION DETAILS</b></legend>
-    <label for="name" >NAME * </label>                  
-    <input type="text" id="name" minlength="20" required>
-    <br><br>                
+<fieldset>
+    <legend><b>APPLICATION DETAILS </b></legend>
+<form action="./re.html" method="get" autoplay="off">
+  <label for="name"  >NAME * :</label>                  
+    <input type="text" id="name" name="name" minlength="20" autofocus required>
+    <label for="guardens"> FATHER / GUARDIANS NAME *</label>
+    <input type="text" id="guardens" name="guardens" ><br>
+    <span>(minimum charaters:20)</span>
+    <br>
+    <br>
     <label for="birthday" >Date Of Birth * </label>
     <input type="date" id="birthday" name="birthday"  required>
+    <label for="Gender" >Gender * </label>
+    <input type="radio" id="Gender" name="Gender" value="Gender" required> FEMALE
+    <input type="radio" id="Gender" name="Gender" value="Gender" required> MALE
     <br><br>
+    
     <label for="number" >Age As On * </label>
     <input type="text" id="number" name="Age" required>
+    <label for="number" >Aadhaar no * </label>
+    <input type="text" id="number" name="number" required>
     <br><br>
     <label for="number" >Whatsapp * </label>
     <input type="text" id="number" name="Whatsapp"  required >
+    <labe for="text">e-mail</labe>
+    <input type="email" id="e-mail" name="e-mail" pattern="[a-z0-9_.]+gmail.com" required>
     <br><br>
     <label for="image" >Photo * </label>
     <input type="file" id="iamge" name="Photo" required>
-    <br><br>
-    <label for="name" >Father's / Graudians Name * </label>                  
-    <input type="text" id="name" name="name" required>
-    <br><br>  
-    <label for="Gender" >Gender * </label>
-    <input type="radio" id="Gender" name="Gender" value="Gender" required> father
-    <input type="radio" id="Gender" name="Gender" value="Gender" required> mother
-    <br><br>
-    <label for="number" >Aadhaar no * </label>
-    <input type="text" id="number" name="number" required>
+
     <br><br>
     </fieldset>
     <fieldset>
         <legend><b>RESIDENTIAL ADDRESS DETAILS</b></legend>
-        <label for="textarea">Applicant's Address * </label>
-    <input type="text" id="textarea" minlength="20" maxlength="20" name="textarea" required>
+        <label for="address">Applicant's Address * </label>
+    <textarea type="text" minlength="20" maxlength="20" name="address" width="60" height="120" required></textarea>
+    <label for="district">DISTRICT *:</label>
+    <select type="text" id="district" name="district" required>
+        <option value="select">HYDERABAD</option>
+        <option value="select">NALGONDA</option>
+        <option > RANGAREDDY</option>
+    </select>
+    <br>
+    <span>(minimum charaters:20)</span>
     <br><br>
-    <div> 
-        <label for="city">Mandal * </label>
-        <div>
-            <select>
+    <label for="city">Mandal *: </label>
+        <select>
                 <option value="hyd"> HYDERABAD</option>
                 <option value="nlg" > NALGONDA</option>
-            </select>
-        </div>    
-   </div>           
-    <br><br>  
-    <label for="number" >Pin code * </label>
-    <input type="text" maxlength="6" minlength="6" id="number" name="Age" required>
-    <br><br>
-    <div> 
-        <label for="city">District * </label>
-        <div>
-            <select>
+        </select>
+            <label for="city">Village * </label>
+        <select>
                 <option value="hyd" > HYDERABAD</option>
                 <option value="nlg" > NALGONDA</option>
-            </select>
-        </div>    
-   </div>           
-    <br>
-    <div> 
-     <label for="city">Village * </label>
-    <div>
-    <select>
-        <option value="hyd" > HYDERABAD</option>
-        <option value="nlg" > NALGONDA</option>
-        </select>
-    </div>    
-   </div>      
+        </select>   <br><br>
+    <label for="number" >Pin code * </label>
+    <input type="text" maxlength="6" minlength="6" id="number" name="Age" required>
+    <br><br>         
+     
     <br><br>
-</fieldset>
-<fieldset>
- <legend><b>PASS TYPE DETAILS</b></legend>
- <div> 
+ </fieldset>
+ <fieldset>
+  <legend><b>PASS TYPE DETAILS</b></legend>
     <label for="city"> City * </label>
-   <div>
    <select>
        <option value="hyd" > HYDERABAD</option>
        <option value="nlg" > NALGONDA</option>
-       </select>
-   </div>    
-  </div>      
-   <br>
-   <div> 
+    </select>      
+   <br> <br>
     <label for="city">Pass Type* </label>
-   <div>
-   <select>
-       <option value="slt" > ----select----</option>
-       <option value="gat" > GREATRER PASS </option>
+<select>
+       <option value="slt"> ----select----</option>
+       <option value="gat" > GREATER PASS </option>
        <option value="oiy" > ORDINARY PASS </option>
-       </select>
-   </div>    
-  </div>      
+    </select>     
    <br><br>
-</fieldset>
-<fieldset>
+ </fieldset>
+ <fieldset>
  <legend><b>MODE OF PAYMENT & PASS COLLECTION</b></legend>
-    <div> 
         <label for="city">Payment mode* </label>
-       <div>
        <select>
            <option value="slt" > SELECT PAYMENT MODE</option>
            <option value="PYT" > PAYMENT AT COUNTRER </option>
-           </select>
-       </div>    
-      </div>      
-       <br>
-       <div> 
+           </select>      
+       <br><br>
         <label for="city">Pass Delivery Mode* </label>
-       <div>
-       <select>
+    <select>
            <option value="slt" > SELECT PASS DELIVERY MODE</option>
            <option value="CNR" >  AT COUNTRER </option>
-           </select>
-       </div>    
-      </div>      
-       <br>
-       <div> 
-        <label for="city">Center at Which Want To Collect Pass </label>
-       <div>
-       <select>
-           <option value="slt" > -------select-------</option>
+    </select>     
+       <br><br>
+       <label for="city">Center at Which Want To Collect Pass </label>
+    <select>
+           <option value="slt" >---select---</option>
            <option value="hyd">  HYDERABAD </option>
            <option value="NLG">  NALGONDA </option>
            <option value="rrdy">  RANGAREDDY </option>
-           </select>
-       </div>    
-      </div>      
-       <br>
+    </select>
+          <br><br>
 </fieldset>
 </form>
 </table>
